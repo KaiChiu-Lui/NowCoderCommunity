@@ -8,6 +8,7 @@ import java.util.Date;
 @Data
 @ToString
 public class DiscussPost {
+
     private int id;
     private int userId;
     private String title;
@@ -17,4 +18,5 @@ public class DiscussPost {
     private Date createTime;
     private int commentCount;
     private double score;
+
 }

@@ -8,7 +8,7 @@ import java.util.List;
 
 @Mapper
 public interface DiscussPostMapper {
-    //为0时不查询,offset:每页起始行行号,limit:每页最多显式多少数据
+
     List<DiscussPost> selectDiscussPosts(int userId, int offset, int limit);
 
     // @Param注解用于给参数取别名,

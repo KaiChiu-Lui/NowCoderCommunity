@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CommunityDemo/CommunityDemo.iml" filepath="$PROJECT_DIR$/CommunityDemo/CommunityDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/community/community.iml" filepath="$PROJECT_DIR$/community/community.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/newcoderCommunity.iml" filepath="$PROJECT_DIR$/.idea/newcoderCommunity.iml" />
     </modules>
