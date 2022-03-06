@@ -7,6 +7,7 @@
     <sql id="selectField">
         id,user_id,title,content,type,status,create_time,comment_count,score
     </sql>
+
     <select id="selectDiscussPosts" resultType="com.nowcoder.community.entity.DiscussPost">
         select <include refid="selectField"></include>
         from discuss_post
@@ -17,4 +18,14 @@
         order by type desc, create_time desc
         limit #{offset},#{limit}
     </select>
+
+    <select id="selectDiscussPostRows" resultType="int">
+        select count(*)
+        from discuss_post
+        where status!=2
+        <if test="userId!=0">
+            and user_id = #{userId}
+        </if>
+    </select>
+
 </mapper>
