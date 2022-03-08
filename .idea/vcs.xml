@@ -2,14 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第一章素材和源码/素材/nowcoder" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.1" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.2" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.3" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.4" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.5" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.6" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.7" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community" vcs="Git" />
   </component>
 </project>
