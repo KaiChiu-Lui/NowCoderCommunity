@@ -22,6 +22,7 @@ public class MapperTest {
 
     @Autowired
     UserMapper userMapper;
+
     @Test
     public void discussPostMapperTest(){
         List<DiscussPost> discussPosts = discussPostMapper.selectDiscussPosts(0, 1, 10);
@@ -34,4 +35,5 @@ public class MapperTest {
         User user = userMapper.selectById(1);
         System.out.println(user);
     }
+
 }
