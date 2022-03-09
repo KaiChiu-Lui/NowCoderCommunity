@@ -1,5 +1,6 @@
 package com.nowcoder.community.controller;
 
+import com.nowcoder.community.annotation.LoginRequired;
 import com.nowcoder.community.entity.User;
 import com.nowcoder.community.service.UserService;
 import com.nowcoder.community.util.CommunityUtil;
@@ -39,6 +40,7 @@ public class UserController { //处理账号设置
     @Autowired
     private UserService userService;
 
+    @LoginRequired
     @RequestMapping("/setting")
     public String getSettingPage(){ //点击Header的账号设置 跳转到账号设置的页面
         return "/site/setting";
