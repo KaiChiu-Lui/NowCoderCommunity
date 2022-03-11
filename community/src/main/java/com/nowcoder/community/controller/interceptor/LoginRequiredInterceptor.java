@@ -28,15 +28,12 @@ public class LoginRequiredInterceptor implements HandlerInterceptor {
             HandlerMethod handlerMethod = (HandlerMethod) handler;
             Method method = handlerMethod.getMethod();
             LoginRequired loginRequired = method.getAnnotation(LoginRequired.class);
-
             if(loginRequired!=null&&hostHolder.getUser()==null){
                 //需要登录 且未登录
                 System.out.println("需要登录");
                 response.sendRedirect(request.getContextPath() + "/login");
                 return false;
             }
-
-            else System.out.println("已经登录了,可以访问对应的方法");
         }
         return true;
     }
