@@ -2,10 +2,12 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第三章素材和源码/community" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.2" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.3" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.5" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.6" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.8" vcs="Git" />
   </component>
 </project>
