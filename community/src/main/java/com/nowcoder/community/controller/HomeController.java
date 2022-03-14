@@ -31,7 +31,7 @@ public class HomeController {
         //从/index页面传入page的参数
         page.setPath("/index");
         page.setRows(discussPostService.findDiscussPostRows(0));
-
+        // Integer.parseInt("abc");
         //使用List<Map>封装discussPost 其中一个Map对应一条DisucssPost
         List<Map<String,Object>>discussPosts = new ArrayList<>();
         List<DiscussPost> lists = discussPostService.findDiscussPosts(0,page.getOffset(),page.getLimit());
