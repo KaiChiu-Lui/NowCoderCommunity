@@ -31,8 +31,10 @@ public class CommunityUtil {
         JSONObject json = new JSONObject();
         json.put("code",code);
         json.put("msg",msg);
-        for(String key : map.keySet()){
-            json.put(key,map.get(key));
+        if(map!=null&&!map.isEmpty()){
+            for(String key : map.keySet()){
+                json.put(key,map.get(key));
+            }
         }
         return json.toJSONString();
     }
