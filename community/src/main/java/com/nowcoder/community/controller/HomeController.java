@@ -4,6 +4,7 @@ package com.nowcoder.community.controller;
 import com.nowcoder.community.entity.DiscussPost;
 import com.nowcoder.community.entity.Page;
 import com.nowcoder.community.service.DiscussPostService;
+import com.nowcoder.community.service.LikeService;
 import com.nowcoder.community.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,6 +18,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static com.nowcoder.community.util.CommunityConstant.ENTITY_TYPE_POST;
+
 //首页功能控制器
 @Controller
 public class HomeController {
@@ -25,6 +28,9 @@ public class HomeController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private LikeService likeService;
 
     @RequestMapping(path = "/index", method = RequestMethod.GET)
     public String getIndexPage(Model model, Page page) {
@@ -41,6 +47,9 @@ public class HomeController {
                 map.put("post",discussPost);
                 map.put("user",userService.findUserById(discussPost.getUserId()));
                 discussPosts.add(map);
+                //存点赞数
+                long likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_POST, discussPost.getId());
+                map.put("likeCount", likeCount);
             }
         }
         model.addAttribute("discussPosts", discussPosts);
