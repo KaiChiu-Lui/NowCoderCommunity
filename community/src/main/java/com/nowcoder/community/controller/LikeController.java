@@ -25,15 +25,18 @@ public class LikeController {
 
     @RequestMapping(value = "/like",method = RequestMethod.POST)
     @ResponseBody
-    public String like(Model model, int entityType, int entityId){
+    public String like(Model model, int entityType, int entityId,int entityUserId){
+        System.out.println("进入到了这里");
         User user = hostHolder.getUser();
         if(user==null) return "redirect:/login";
         //点赞
-        likeService.like(user.getId(),entityType,entityId);
+        likeService.like(user.getId(),entityType,entityId,entityUserId);
         //点赞数量
         long likeCount = likeService.findEntityLikeCount(entityType,entityId);
+        System.out.println("点赞数量"+likeCount);
         //点赞状态
         int likeStatus = likeService.findEntityLikeStatus(user.getId(), entityType, entityId);
+        System.out.println("点赞状态"+likeStatus);
         Map<String,Object> map = new HashMap<>();
         map.put("likeCount",likeCount);
         map.put("likeStatus",likeStatus);

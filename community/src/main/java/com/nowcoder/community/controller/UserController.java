@@ -2,6 +2,7 @@ package com.nowcoder.community.controller;
 
 import com.nowcoder.community.annotation.LoginRequired;
 import com.nowcoder.community.entity.User;
+import com.nowcoder.community.service.LikeService;
 import com.nowcoder.community.service.UserService;
 import com.nowcoder.community.util.CommunityUtil;
 import com.nowcoder.community.util.HostHolder;
@@ -20,6 +21,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/user")
@@ -39,6 +42,9 @@ public class UserController { //处理账号设置
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private LikeService likeService;
 
     @LoginRequired
     @RequestMapping("/setting")
@@ -97,4 +103,14 @@ public class UserController { //处理账号设置
         }
     }
 
+    @RequestMapping(value = "/profile/{userId}",method = RequestMethod.GET)
+    public String getProfilePage(@PathVariable("userId") int userId,Model model){
+        int likeCount = likeService.findUserLikeCount(userId);
+        User userById = userService.findUserById(userId);
+
+        model.addAttribute("user",userById);
+        model.addAttribute("likeCount",likeCount);
+
+        return "/site/profile";
+    }
 }
