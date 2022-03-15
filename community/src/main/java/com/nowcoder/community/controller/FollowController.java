@@ -20,14 +20,14 @@ public class FollowController {
     @RequestMapping(value = "/follow",method = RequestMethod.POST)
     @ResponseBody
     public String follow(int entityType,int entityId){
-        followService.follow(hostHolder.getUser().getId(), entityId, entityType);
+        followService.follow(hostHolder.getUser().getId(),entityType, entityId);
         return CommunityUtil.getJSONString(0,"关注成功");
     }
 
     @RequestMapping(value = "/unfollow",method = RequestMethod.POST)
     @ResponseBody
     public String unfollow(int entityType,int entityId){
-        followService.unfollow(hostHolder.getUser().getId(), entityId, entityType);
+        followService.unfollow(hostHolder.getUser().getId(),  entityType, entityId );
         return CommunityUtil.getJSONString(0,"取消关注成功");
     }
 }
