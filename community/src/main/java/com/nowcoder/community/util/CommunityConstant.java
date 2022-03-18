@@ -68,6 +68,11 @@ public interface CommunityConstant {
     String TOPIC_PUBLISH = "publish";
 
     /**
+     * 主题:删除
+     */
+    String TOPIC_DELETE = "delete";
+
+    /**
      * 权限: 普通用户
      */
     String AUTHORITY_USER = "user";
@@ -81,5 +86,7 @@ public interface CommunityConstant {
      * 权限:版主
      */
     String AUTHORITY_MODERATOR = "moderator";
+
+
 
 }
