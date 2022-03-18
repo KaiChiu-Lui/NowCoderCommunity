@@ -53,6 +53,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
                 )
                 .antMatchers("/discuss/delete")
                 .hasAnyAuthority(AUTHORITY_ADMIN)
+                .antMatchers("/data/**")
+                .hasAnyAuthority(AUTHORITY_ADMIN)
                 .anyRequest().permitAll()
                 .and().csrf().disable();
 
