@@ -2,14 +2,35 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第一章素材和源码/素材/nowcoder" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.1" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.2" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.3" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.4" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.5" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.6" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.7" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/第二章素材和源码/源码/community-2.8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第七章素材和源码/community" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第七章素材和源码/community-7.10" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第七章素材和源码/community-7.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第七章素材和源码/community-7.4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第七章素材和源码/community-7.5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第七章素材和源码/community-7.6" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第七章素材和源码/community-7.7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第七章素材和源码/community7.5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第三章素材和源码/community" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.10" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.6" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第三章素材和源码/community-3.9" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第五章素材和源码/community" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第五章素材和源码/community-5.1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第五章素材和源码/community-5.3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第五章素材和源码/community-5.4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第五章素材和源码/community-5.5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第六章素材和源码/community-6.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第六章素材和源码/community-6.3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第四章素材和源码/community-4.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第四章素材和源码/community-4.3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第四章素材和源码/community-4.4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第四章素材和源码/community-4.5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第四章素材和源码/community-4.6" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/第四章素材和源码/community-4.7" vcs="Git" />
   </component>
 </project>
