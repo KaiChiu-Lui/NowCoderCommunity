@@ -35,9 +35,9 @@ public class MapperTest implements CommunityConstant {
 
     @Test
     public void discussPostMapperTest(){
-        List<DiscussPost> discussPosts = discussPostMapper.selectDiscussPosts(0, 1, 10);
-        System.out.println(discussPosts);
-        System.out.println(discussPostMapper.selectDiscussPostRows(0));
+        // List<DiscussPost> discussPosts = discussPostMapper.selectDiscussPosts(0, 1, 10);
+        // System.out.println(discussPosts);
+        // System.out.println(discussPostMapper.selectDiscussPostRows(0));
     }
 
     @Test

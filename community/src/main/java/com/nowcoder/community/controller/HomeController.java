@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
@@ -33,14 +34,15 @@ public class HomeController {
     private LikeService likeService;
 
     @RequestMapping(path = "/index", method = RequestMethod.GET)
-    public String getIndexPage(Model model, Page page) {
+    public String getIndexPage(Model model, Page page,
+                               @RequestParam(name = "orderMode",defaultValue = "0")int orderMode) {
         //从/index页面传入page的参数
-        page.setPath("/index");
+        page.setPath("/index?orderMode=" + orderMode);
         page.setRows(discussPostService.findDiscussPostRows(0));
         // Integer.parseInt("abc");
         //使用List<Map>封装discussPost 其中一个Map对应一条DisucssPost
         List<Map<String,Object>>discussPosts = new ArrayList<>();
-        List<DiscussPost> lists = discussPostService.findDiscussPosts(0,page.getOffset(),page.getLimit());
+        List<DiscussPost> lists = discussPostService.findDiscussPosts(0,page.getOffset(),page.getLimit(),orderMode);
         if(lists!=null){
             for(DiscussPost discussPost : lists){
                 Map<String,Object> map = new HashMap<>(); // 一个map对应一条记录 {user:,post:}
@@ -53,6 +55,7 @@ public class HomeController {
             }
         }
         model.addAttribute("discussPosts", discussPosts);
+        model.addAttribute("orderMode", orderMode);
         return "/index";
     }
 
